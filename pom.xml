@@ -30,7 +30,7 @@
     <dependencies>
 		<dependency>
 			<groupId>com.petra.graphqlify</groupId>
-			<artifactId>graphqlify-java-processor-engine</artifactId>
+			<artifactId>graphqlify-java-processor</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
