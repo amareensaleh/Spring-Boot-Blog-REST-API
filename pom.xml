@@ -37,11 +37,13 @@
 			<groupId>com.petra.graphqlify</groupId>
 			<artifactId>graphqlify-java-processor</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.petra.graphqlify</groupId>
 			<artifactId>graphqlify-java-springweb-plugin</artifactId>
 			<version>1.0.0-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -107,21 +109,6 @@
             <scope>runtime</scope>
         </dependency>
 
-		<dependency>
-			<groupId>com.graphql-java-kickstart</groupId>
-			<artifactId>graphql-java-tools</artifactId>
-			<version>11.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.graphql-java-kickstart</groupId>
-			<artifactId>graphql-java-servlet</artifactId>
-			<version>11.1.0</version>
-		</dependency>
-		<dependency>
-			<groupId>com.graphql-java</groupId>
-			<artifactId>graphql-java</artifactId>
-			<version>22.1</version>
-		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
