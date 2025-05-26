@@ -7,10 +7,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.convert.Jsr310Converters;
-
+import org.springframework.boot.web.servlet.ServletComponentScan;
 import javax.annotation.PostConstruct;
 import java.util.TimeZone;
 
+@ServletComponentScan("graphqlify.generated.graphql")
 @SpringBootApplication
 @EntityScan(basePackageClasses = { BlogApiApplication.class, Jsr310Converters.class })
 

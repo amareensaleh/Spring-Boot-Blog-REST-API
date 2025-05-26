@@ -3,6 +3,7 @@ package com.sopromadze.blogapi.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sopromadze.blogapi.model.audit.UserDateAudit;
 import com.sopromadze.blogapi.model.Post;
+import com.sopromadze.blogapi.model.user.User;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
@@ -58,6 +59,18 @@ public class Tag extends UserDateAudit {
 		} else {
 			this.posts = Collections.unmodifiableList(posts);
 		}
+	}
+
+	public String getTitle() {
+		return name;
+	}
+
+	public User getUser() {
+		return null; // Tags do not have a user associated with them
+	}
+
+	public List<Photo> getPhoto() {
+		return null; // Tags do not have photos, so returning null
 	}
 
 }

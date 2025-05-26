@@ -1,5 +1,5 @@
 resolvers:
-  enabled: false
+  enabled: true
 
 failure:
   mode: "auto_correct"
