@@ -1,5 +1,14 @@
 resolvers:
   enabled: true
 
+log:
+  debug: false
+  info: false
+
+input:
+  injection:
+    types:
+      - com.sopromadze.blogapi.security.UserPrincipal
+
 failure:
   mode: "auto_correct"
