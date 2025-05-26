@@ -92,8 +92,4 @@ public class Post extends UserDateAudit {
 			this.tags = Collections.unmodifiableList(tags);
 		}
 	}
-
-	public List<Photo> getPhoto() {
-		return null; // Posts do not have photos, so returning null
-	}
 }

@@ -1,7 +1,5 @@
 package com.sopromadze.blogapi.model;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sopromadze.blogapi.model.audit.UserDateAudit;
 import com.sopromadze.blogapi.model.user.User;
@@ -70,13 +68,5 @@ public class Comment extends UserDateAudit {
     @JsonIgnore
     public User getUser() {
         return user;
-    }
-
-    public String getTitle() {
-        return this.post != null ? this.post.getTitle() : null;
-    }
-
-    public List<Photo> getPhoto(){
-        return this.post != null ? this.post.getPhoto() : null;
     }
 }

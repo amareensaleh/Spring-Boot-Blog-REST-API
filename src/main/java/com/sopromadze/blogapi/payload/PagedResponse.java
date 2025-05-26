@@ -46,7 +46,8 @@ public class PagedResponse<T> {
 		return last;
 	}
 
+	// lombok getter fix
 	public boolean getLast() {
-		return last;
+		return isLast();
 	}
 }
